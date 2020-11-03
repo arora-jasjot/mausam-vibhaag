@@ -1,0 +1,254 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: Freemono, monospace;
+  font-weight: 600;
+  font-size: 30px;
+  scroll-behavior: smooth;
+}
+#skelton{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(0,0,0, 0.2);
+}
+#load{
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: rgba(0,0,0, 0.4);
+  color: #ffffff;
+  font-size: 0.8em;
+  text-align: center;
+  padding-top: 20px;
+  border: 2px dotted black;
+}
+.yellow-text{
+  color: #ffec3e;
+}
+.cyan-text{
+  color: #00ffff;
+}
+.white-text{
+  color: #ffffff;
+}
+.center{
+  text-align: center;
+}
+.no-display{
+  display: none;
+}
+#search{
+  width: 100%;
+  height: 100%;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.bg-opacity{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.6);
+  padding: 4%;
+}
+#logo-img{
+  width: 200px;
+  animation: left 3s 1;
+}
+#name{
+  font-size: 2em;
+  font-style: italic;
+  margin-bottom: 10px;
+  border-bottom: 4px solid #ffec3e;
+}
+#tagline{
+  font-size: 1.2em;
+}
+#search-form{
+  margin-top: 10%;
+}
+#search-box{
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 0.3% 0% 0.3% 1%;
+}
+#search-btn{
+  color: white;
+}
+#search-btn:hover{
+  color: #00ffff;
+}
+#error-message{
+  color: red;
+  margin-bottom: 2%;
+}
+#select-msg{
+  margin-bottom: 3%;
+  font-size: 1.3em;
+}
+.city{
+  color: white;
+  margin-bottom: 0.7%;
+  font-size: 1.3em;
+  text-align: left;
+  padding-left: 5% !important;
+}
+.city:hover{
+  color: #00ffff;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+#results{
+  width: 100%;
+  background-image: url("rain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+#moveup{
+  position: fixed;
+  left: 5px;
+  top: 90%;
+  width: 70px;
+  height: 70px;
+  background-color: wheat;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#result-msg{
+  font-size: 0.8em;
+  text-decoration: underline;
+}
+#date-time{
+  text-align: right;
+  line-height: 1em;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+#cityname{
+  margin-top: 2%;
+  font-size: 3em;
+  font-style: italic;
+  border-bottom: 4px solid #ffec3e;
+}
+#cords{
+  margin-top: 1%;
+}
+#lon, #lat{
+  font-size: 1.5em;
+}
+#weather-img{
+  margin-top: 1%;
+  padding: 3%;
+}
+#wicon{
+  width: 300px;
+  border: 3px dotted black;
+  border-radius: 300px;
+  background: rgb(45,255,78);
+  background: linear-gradient(90deg, rgba(45,255,78,1) 0%, rgba(255,240,82,1) 40%, rgba(255,240,82,1) 50%, rgba(255,240,82,1) 60%, rgba(77,255,105,1) 100%);
+}
+#temperature{
+  margin-top: 1%;
+  padding: 3%;
+  padding-top: 5%;
+}
+#crt-temp{
+  font-size: 2em;
+  font-style: italic;
+}
+#max-temp, #min-temp, #weather-desc{
+  font-size: 1.5em;
+  font-style: italic;
+  line-height: 1em;
+}
+#weatherdesc{
+  margin-top: 1%;
+}
+#conditions{
+  margin-top: 1%;
+}
+#weather{
+  font-size: 2.5em;
+  font-style: italic;
+  text-decoration: underline;
+  margin-top: 3%;
+}
+.condition{
+  font-size: 1.2em;
+}
+@media only screen and (max-width:1137px) {
+  #search-box{
+    width: 70%;
+    font-size: 0.8em;
+  }
+  #select-msg, .city{
+    font-size: 1em;
+  }
+  #cityname{
+    font-size: 2.2em;
+  }
+  #lon, #lat{
+    font-size: 1.2em;
+  }
+  #max-temp, #min-temp, #weather-desc{
+    font-size: 1.1em;
+  }
+}
+@media only screen and (max-width: 798px) {
+  #logo-img{
+    width: 150px;
+  }
+  #name{
+    font-size: 1.5em;
+  }
+  #tagline{
+    font-size: 1em;
+  }
+  #select-msg, .city{
+    font-size: 0.8em;
+  }
+  #cityname{
+    margin-top: 4%;
+    font-size: 1.7em;
+  }
+  #lon, #lat{
+    font-size: 1em;
+  }
+  #date-time{
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  #max-temp, #min-temp, #weather-desc{
+    font-size: 1em;
+  }
+  #weatherdesc{
+    margin-top: 5%;
+  }
+  #conditions{
+    margin-top: 5%;
+  }
+}
+@media only screen and (max-width:400px) {
+  #logo-img{
+    width: 130px;
+  }
+  #name{
+    font-size: 1em;
+  }
+  #tagline{
+    font-size: 0.8em;
+  }
+  #select-msg, .city{
+    font-size: 0.7em;
+  }
+}
